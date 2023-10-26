@@ -1,0 +1,35 @@
+{
+  "name": "xero",
+  "version": "1.0.0",
+  "description": "Bots for popular .io games.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Tatsuya & Enes",
+  "license": "ISC",
+  "dependencies": {
+    "@devoxa/aes-encryption": "^1.0.3",
+    "axios": "^0.26.1",
+    "console-log-colors": "^0.4.0",
+    "crypto-js": "^4.1.1",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "js-deobfuscator": "^1.0.19",
+    "p-limit": "^4.0.0",
+    "path": "^0.12.7",
+    "proxy-agent": "^5.0.0",
+    "querystring": "^0.2.1",
+    "random-useragent": "^0.5.0",
+    "request": "^2.88.2",
+    "smart-buffer": "^4.2.0",
+    "socks-proxy-agent": "^7.0.0",
+    "url": "^0.11.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.0.0"
+  }
+}

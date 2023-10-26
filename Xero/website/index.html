@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="uiMain">
+  <div id="uiContentMarker">
+    Xero
+  </div>
+  <div id="uiContent">
+    <div class="uiContentClass">
+      <div class="uiContentClassTitle" id="uiRootBotCounter">0 / 0</div>
+      <div class="uiContentClassDescription">Bots Online</div>
+    </div>
+    <div class="uiContentClass">
+      <div class="uiContentClassTitle" id="uiRootStartStop">Start</div>
+      <div class="uiContentClassDescription" id="uiRootContentMarker">Start / Stop</div>
+    </div>
+    <div class="uiContentClass">
+      <div class="uiContentClassTitle" id="uiRootBotStatus">Offline</div>
+      <div class="uiContentClassDescription">Server Status</div>
+    </div>
+  </div>
+</div>
+
+</html>
+
+<style>
+  #uiMain {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 20%;
+    height: 10%;
+    background: rgb(0 0 0 / 50%);
+    border-radius: 40px;
+    transform: translate(-50%, 0);
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+    text-align: center;
+    z-index: 1000000000;
+  }
+
+  #uiContent {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #uiContentMarker {
+    background: #8782e8;
+    position: relative;
+    width: 30%;
+    height: 25%;
+    top: -8%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+  }
+
+  .uiContentClassTitle {
+    font-size: 90%;
+    margin-bottom: 5%;
+  }
+
+  .uiContentClassDescription {
+    font-size: 80%;
+  }
+
+  #uiRootStartStop {
+    cursor: pointer;
+    color: #4287f5;
+  }
+
+  #uiRootBotStatus {
+    color: #FF6961;
+  }
+</style>
