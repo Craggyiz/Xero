@@ -317,16 +317,7 @@ class Client {
     }
 }
 
-function isAllowedHost() {
-    const allowedHosts = [
-        'agarpowers.xyz',
-        'agar.live',
-        'agar.cc'
-    ];
-    return allowedHosts.includes(location.host);
-}
 
-if (isAllowedHost()) {
     var usr;
 
     WebSocket.prototype.send = new Proxy(WebSocket.prototype.send, {
@@ -341,6 +332,3 @@ if (isAllowedHost()) {
     window.addEventListener('load', () => {
         usr = new Client();
     });
-} else {
-    alert(`Error occured while starting the script! Please DM a Developer this message: ${btoa(location.host)}`);
-}
